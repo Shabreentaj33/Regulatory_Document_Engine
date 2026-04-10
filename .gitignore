@@ -21,3 +21,5 @@ venv/
 
 # VS Code
 .vscode/
+qdrant_bin/
+*.exe
