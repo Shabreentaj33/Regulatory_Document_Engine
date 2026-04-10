@@ -1,0 +1,31 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+pydantic>=2.0.0
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── PDF processing ────────────────────────────────────────────────────────────
+PyMuPDF>=1.23.0
+
+# ── Vector store (embedded Qdrant — no separate process needed) ───────────────
+qdrant-client>=1.7.0
+
+# ── Embeddings + reranker ─────────────────────────────────────────────────────
+sentence-transformers>=2.6.0
+
+# ── LLM Option A: ctransformers (RECOMMENDED — pre-built wheels, no compiler) ─
+# Downloads Qwen2.5-1.5B GGUF from HuggingFace automatically
+ctransformers>=0.2.27
+huggingface-hub>=0.21.0
+
+# ── LLM Option B: transformers flan-t5-small (fallback, already works) ────────
+transformers>=4.40.0
+torch>=2.0.0       # CPU-only is fine
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+numpy>=1.24.0
+requests>=2.31.0
+pandas>=2.0.0

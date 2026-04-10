@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data & storage
+data/
+uploads/
+models/
+qdrant_storage/
+
+# Database
+*.db
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+venv/
+
+# VS Code
+.vscode/
