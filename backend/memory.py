@@ -31,7 +31,7 @@ class PersistentMemory:
     The database file lives at  data/memory.db  (auto-created).
     """
 
-    def __init__(self, db_path: str | Path = "data/memory.db") -> None:
+    def __init__(self, db_path: str | Path = Path(__file__).resolve().parent.parent / "data" / "memory.db") -> None:
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._init_db()
