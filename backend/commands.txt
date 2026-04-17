@@ -1,0 +1,3 @@
+python -m uvicorn model_service.model_service:app --port 9000 
+uv run uvicorn backend.main:app --reload
+streamlit run frontend/app.py
